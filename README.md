@@ -1,3 +1,3 @@
 # First Project in Swift.
 
-**GOAL : ** Improve Swift skills
+**GOAL :** Improve Swift skills
