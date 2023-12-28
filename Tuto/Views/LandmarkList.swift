@@ -19,7 +19,9 @@ struct LandmarkList: View {
             .navigationTitle("Landmarks")
         } detail: {
             Text("Select a Landmark")
-                .font(.caption)
+                .font(.title)
+                .fontWeight(.semibold)
+            
         }
     }
 }
