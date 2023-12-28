@@ -1,4 +1,6 @@
 
+//                              DIFFERENTS PROTOCOLS USED IN THIS STRUCT
+
 //                              Hashable : Protocol de comparaison entre deux valeurs
 //                              Exemple  -->
  
@@ -20,11 +22,21 @@
 
 //                              -----------------------------------------------------
 
+//                              Identifiable : Protocol that Use the Identifiable protocol to provide a stable notion of                                                  identity to a class or value type
+
+//                              - Guaranteed always unique, like UUIDs. (It's used to associate a unique ID to each element.
+
+//                              Instead this : List(landmarks, id: \.id) { landmark in
+//                              Use this : (with Identifiable Protocol) --> List(landmarks) { landmark in
+//                              It's more easy
+    
+//                              -----------------------------------------------------
+
 import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var park: String
