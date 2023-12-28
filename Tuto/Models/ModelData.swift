@@ -1,4 +1,8 @@
 
+// FILE USED TO FETCH INFOS IN THE JSON FILE
+//      LOAD FUNCTION : take 1 argument of type T who's decodable (due to Codable protocol) and return T type
+//      Error handling if file doesn't exists ect...
+
 import Foundation
 
 var landmarks: [Landmark] = load("landmarkData.json")
