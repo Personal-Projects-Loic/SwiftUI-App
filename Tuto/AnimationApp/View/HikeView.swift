@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 extension AnyTransition {
     static var moveAndFade: AnyTransition {
         .asymmetric(
@@ -17,11 +16,9 @@ extension AnyTransition {
     }
 }
 
-
 struct HikeView: View {
     var hike: Hike
-    @State private var showDetail = false
-    
+    @State private var showDetail = true
     
     var body: some View {
         VStack {

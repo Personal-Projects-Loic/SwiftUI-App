@@ -1,11 +1,25 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
 
-Abstract:
-The elevation, heart rate, and pace of a hike plotted on a graph.
-*/
+/* ---------------------------------------------------------------
+Extension : Very usefull, in extension you can add methods, var... It's used to assign a value or a returned value to a name. for exemple :
+
+extension UIColor {
+    public class var lightBlue: UIColor {
+        return UIColor(red: 205/255, green: 240/255, blue: 255/255, alpha: 1.0)
+    }
+}
+
+Now, instead of using the expression : UIColor(red: 205/255, green: 240/255, blue: 255/255, alpha: 1.0). I use : ⭐️ UIColor.lightBlue ⭐️ It's more understandable and more easy.
+ -------------------------------------------------------------- */
 
 import SwiftUI
+
+extension Animation {
+    static func ripple(index: Int) -> Animation {
+        Animation.spring(dampingFraction: 0.5)
+            .speed(2)
+            .delay(0.03 * Double(index))
+    }
+}
 
 struct HikeGraph: View {
     var hike: Hike
@@ -40,6 +54,7 @@ struct HikeGraph: View {
                         range: observation[keyPath: path],
                         overallRange: overallRange
                     )
+                    .animation(.ripple(index: index))
                 }
                 .offset(x: 0, y: proxy.size.height * heightRatio)
             }
