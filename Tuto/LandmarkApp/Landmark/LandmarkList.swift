@@ -11,7 +11,7 @@
 // Toggle : switch button, add a condition and change the state of showFavoritesOnly
 // I use the $ prefix to access a binding to a state variable, or one of its properties.
 
-// animation : Make something more smooth when button is hitted. Take Bool as arg
+// animation : Make something more smooth when button is hitted. Take Bool as argument
 
 // @Environment is used to read core data, as the size, light or dark mode...
 
