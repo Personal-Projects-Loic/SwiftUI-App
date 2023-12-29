@@ -5,11 +5,19 @@
 
 // Observable : optimisation, SwiftUI updates a view only when an observable property changes and the view’s body reads the property directly. I don't understant every thing but seems usefull
 
+// ---------------------------------------------------------------------------------------
+
+//                              NEW PART : ANIMATION
+
+// NEW PART OF THE APP : I load the json file here... The function is made for...
+
+
 import Foundation
 
 @Observable
 class ModelData {
     var landmarks: [Landmark] = load("landmarkData.json")
+    var hikes: [Hike] = load("hikeData.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
