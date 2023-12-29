@@ -27,6 +27,9 @@
 		A5310A1E2B3F0A030071C9E7 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5310A1A2B3F0A030071C9E7 /* HikeGraph.swift */; };
 		A5310A1F2B3F0A030071C9E7 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5310A1B2B3F0A030071C9E7 /* HikeDetail.swift */; };
 		A5310A202B3F0A030071C9E7 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5310A1C2B3F0A030071C9E7 /* HikeView.swift */; };
+		A5310A242B3F1C870071C9E7 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5310A232B3F1C870071C9E7 /* CategoryHome.swift */; };
+		A5310A262B3F1E020071C9E7 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5310A252B3F1E020071C9E7 /* CategoryRow.swift */; };
+		A5310A282B3F213D0071C9E7 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5310A272B3F213D0071C9E7 /* CategoryItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		A5310A1A2B3F0A030071C9E7 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		A5310A1B2B3F0A030071C9E7 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		A5310A1C2B3F0A030071C9E7 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		A5310A232B3F1C870071C9E7 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		A5310A252B3F1E020071C9E7 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		A5310A272B3F213D0071C9E7 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,8 @@
 		A53109E42B3AF3700071C9E7 /* Tuto */ = {
 			isa = PBXGroup;
 			children = (
-				A53109E72B3AF3700071C9E7 /* ContentView.swift */,
+				A5310A222B3F1C730071C9E7 /* Home */,
 				A53109E52B3AF3700071C9E7 /* TutoApp.swift */,
-				A5310A0F2B3F03500071C9E7 /* AnimationApp */,
-				A5310A0E2B3F03350071C9E7 /* LandmarkApp */,
 				A53109EB2B3AF3710071C9E7 /* Assets.xcassets */,
 				A53109ED2B3AF3710071C9E7 /* Preview Content */,
 			);
@@ -104,6 +108,9 @@
 		A5310A012B3C78FA0071C9E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5310A232B3F1C870071C9E7 /* CategoryHome.swift */,
+				A5310A252B3F1E020071C9E7 /* CategoryRow.swift */,
+				A5310A272B3F213D0071C9E7 /* CategoryItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +210,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A5310A222B3F1C730071C9E7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A53109E72B3AF3700071C9E7 /* ContentView.swift */,
+				A5310A0E2B3F03350071C9E7 /* LandmarkApp */,
+				A5310A0F2B3F03500071C9E7 /* AnimationApp */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,6 +295,7 @@
 				A5310A112B3F036B0071C9E7 /* AnimationPart.swift in Sources */,
 				A53109E82B3AF3700071C9E7 /* ContentView.swift in Sources */,
 				A53109F82B3C64880071C9E7 /* CircleImage.swift in Sources */,
+				A5310A282B3F213D0071C9E7 /* CategoryItem.swift in Sources */,
 				A5310A1D2B3F0A030071C9E7 /* GraphCapsule.swift in Sources */,
 				A53109FA2B3C655A0071C9E7 /* MapView.swift in Sources */,
 				A5310A202B3F0A030071C9E7 /* HikeView.swift in Sources */,
@@ -288,8 +306,10 @@
 				A53109E62B3AF3700071C9E7 /* TutoApp.swift in Sources */,
 				A53109FE2B3C6A5F0071C9E7 /* Landmark.swift in Sources */,
 				A5310A1E2B3F0A030071C9E7 /* HikeGraph.swift in Sources */,
+				A5310A242B3F1C870071C9E7 /* CategoryHome.swift in Sources */,
 				A5310A052B3C7A200071C9E7 /* LandmarkRow.swift in Sources */,
 				A5310A002B3C6FAE0071C9E7 /* ModelData.swift in Sources */,
+				A5310A262B3F1E020071C9E7 /* CategoryRow.swift in Sources */,
 				A5310A1F2B3F0A030071C9E7 /* HikeDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
