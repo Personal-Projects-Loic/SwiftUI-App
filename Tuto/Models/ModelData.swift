@@ -3,9 +3,14 @@
 //      LOAD FUNCTION : take 1 argument of type T who's decodable (due to Codable protocol) and return T type
 //      Error handling if file doesn't exists ect...
 
+// Observable : optimisation, SwiftUI updates a view only when an observable property changes and the view’s body reads the property directly. I don't understant every thing but seems usefull
+
 import Foundation
 
-var landmarks: [Landmark] = load("landmarkData.json")
+@Observable
+class ModelData {
+    var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
