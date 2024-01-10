@@ -18,6 +18,29 @@ Observable : optimisation, SwiftUI updates a view only when an observable proper
 
 NEW PART OF THE APP : I load the json file here... The function is made for...
 
+```swift
+func load<T: Decodable>(_ filename: String) -> T {
+    let data: Data
+
+    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
+    }
+
+    do {
+        data = try Data(contentsOf: file)
+    } catch {
+        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+    }
+
+    do {
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    } catch {
+        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+    }
+}```
+
 Dictionnary : is a container for storing key-value pairs. A key acts as a unique identifier for the value.
 
 
@@ -98,3 +121,4 @@ animation : Make something more smooth when button is hitted. Take Bool as argum
 
 @Environment is used to read core data, as the size, light or dark mode...
 
+**This documentation is only to help me to remember how differents things works.**
