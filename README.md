@@ -121,4 +121,24 @@ animation : Make something more smooth when button is hitted. Take Bool as argum
 
 @Environment is used to read core data, as the size, light or dark mode...
 
+## Category row file :
+
+.prefix : Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
+Exmeple : var tab [1, 2, 3, 4, 5]
+          print(tab.prefix(2))
+          --> [1, 2]
+
+
+## Content View file
+
+```swift
+@State private var selection: Tab = .featured
+```
+
+@State: @State is a property wrapper in SwiftUI that is used to declare a state property. State properties are used to store and manage the mutable state of a view. When the state changes, SwiftUI automatically updates the view to reflect the new state.
+private var selection: Tab: This declares a private variable named selection of type Tab. Tab is assumed to be an enum type, and it represents some kind of selection.
+= .featured: This initializes the selection property with the default value of .featured. The . syntax suggests that featured is a case of an enum, and it is the initial value of the state variable.
+
+Overall, this line of code is declaring a private state variable named selection of type Tab and initializing it with the default value of .featured. The @State property wrapper is used to indicate that changes to this state should trigger a re-render of the SwiftUI view that contains this property.
+
 **This documentation is only to help me to remember how differents things works.**
