@@ -151,14 +151,26 @@ Overall, this line of code is declaring a private state variable named selection
 ---------------------------------------------------------------
 Extension : Very usefull, in extension you can add methods, var... It's used to assign a value or a returned value to a name. for exemple :
 
+```swift
 extension UIColor {
     public class var lightBlue: UIColor {
         return UIColor(red: 205/255, green: 240/255, blue: 255/255, alpha: 1.0)
     }
 }
+```
 
-Now, instead of using the expression : UIColor(red: 205/255, green: 240/255, blue: 255/255, alpha: 1.0). I use : ⭐️ UIColor.lightBlue ⭐️ It's more understandable and more easy.
+Now, instead of using the expression : 
+```swift
+UIColor(red: 205/255, green: 240/255, blue: 255/255, alpha: 1.0).
+```
+
+I use : 
+
+```swift
+⭐️ UIColor.lightBlue ⭐️
+```
+
+It's more understandable and more easy.
  -------------------------------------------------------------- 
-
 
 **This documentation is only to help me to remember how differents things works.**
