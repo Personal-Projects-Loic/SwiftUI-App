@@ -39,7 +39,8 @@ func load<T: Decodable>(_ filename: String) -> T {
     } catch {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
-}```
+}
+```
 
 Dictionnary : is a container for storing key-value pairs. A key acts as a unique identifier for the value.
 
