@@ -90,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				A5310A222B3F1C730071C9E7 /* Home */,
-				A53109E52B3AF3700071C9E7 /* TutoApp.swift */,
 				A53109EB2B3AF3710071C9E7 /* Assets.xcassets */,
 				A53109ED2B3AF3710071C9E7 /* Preview Content */,
 			);
@@ -213,6 +212,7 @@
 		A5310A222B3F1C730071C9E7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A53109E52B3AF3700071C9E7 /* TutoApp.swift */,
 				A53109E72B3AF3700071C9E7 /* ContentView.swift */,
 				A5310A0E2B3F03350071C9E7 /* LandmarkApp */,
 				A5310A0F2B3F03500071C9E7 /* AnimationApp */,

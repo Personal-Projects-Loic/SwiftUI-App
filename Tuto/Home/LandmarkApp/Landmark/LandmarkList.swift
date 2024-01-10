@@ -45,23 +45,6 @@ struct LandmarkList: View {
             .animation(.default, value: filteredLandmarks)
             .navigationTitle("Landmarks")
             
-            /*HStack {
-                NavigationLink(destination: AnimationPart()) {
-                    Text("Animation part")
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                }
-                NavigationLink(destination: CategoryHome()) {
-                    Text("Home part")
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                }
-            }*/
-            
         } detail: {
             Text("Select a Landmark")
                 .font(.title)
