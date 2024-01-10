@@ -14,8 +14,6 @@ Observable : optimisation, SwiftUI updates a view only when an observable proper
 
 ---------------------------------------------------------------------------------------
 
-                             NEW PART : ANIMATION
-
 NEW PART OF THE APP : I load the json file here... The function is made for...
 
 ```swift
@@ -41,6 +39,10 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 ```
+
+Load function is one of those importants functions, it return a decodable T. It's like a JSON or XML
+The function looks like a openFile C function. 
+Using methods like JSONDecoder, and catch error in case of an error.
 
 Dictionnary : is a container for storing key-value pairs. A key acts as a unique identifier for the value.
 
@@ -141,5 +143,22 @@ private var selection: Tab: This declares a private variable named selection of 
 = .featured: This initializes the selection property with the default value of .featured. The . syntax suggests that featured is a case of an enum, and it is the initial value of the state variable.
 
 Overall, this line of code is declaring a private state variable named selection of type Tab and initializing it with the default value of .featured. The @State property wrapper is used to indicate that changes to this state should trigger a re-render of the SwiftUI view that contains this property.
+
+## Hike graph file
+
+                            NEW PART : ANIMATION
+
+---------------------------------------------------------------
+Extension : Very usefull, in extension you can add methods, var... It's used to assign a value or a returned value to a name. for exemple :
+
+extension UIColor {
+    public class var lightBlue: UIColor {
+        return UIColor(red: 205/255, green: 240/255, blue: 255/255, alpha: 1.0)
+    }
+}
+
+Now, instead of using the expression : UIColor(red: 205/255, green: 240/255, blue: 255/255, alpha: 1.0). I use : ⭐️ UIColor.lightBlue ⭐️ It's more understandable and more easy.
+ -------------------------------------------------------------- 
+
 
 **This documentation is only to help me to remember how differents things works.**
